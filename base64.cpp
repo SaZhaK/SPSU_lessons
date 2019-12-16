@@ -99,7 +99,7 @@ void decodeFile(ifstream& inFile, ofstream& outFile){
     }
 }
 
-int base64(int argc, char* argv[]) {
+int main(int argc, char* argv[]) {
 
     if (argc < 4){
         cout << "Unknown command " << argv[0] << endl;
