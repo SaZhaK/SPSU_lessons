@@ -31,7 +31,7 @@ void print (const T* array, int arraySize, const char *str="") {
     cout << endl;
 }
 
-int ArrayShift(int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
     int arraySize;
     cout << "Введите размер массива: ";
     cin >> arraySize;
