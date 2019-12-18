@@ -14,11 +14,11 @@ char Base64symbol(unsigned char b) {
 }
 
 int utf8symbol(unsigned char b) {
-    if (b >= 'A' && b <= 'Z') return b - 'A';
-    else if (b >= 'a' && b <= 'z') return b - 'a' + 26;
-    else if (b >= '0' && b <= '9') return b - '0' + 52;
+    if (b >= '0' && b <= '9') return b - '0';
+    else if (b >= 'a' && b <= 'z') return b - 'a' + 10;
+    else if (b >= 'A' && b <= 'Z') return b - 'A' + 36;
     else if (b == '+') return 62;
-    else if (b == '/')return 63;
+    else if (b == '/') return 63;
     else return '\0';
 }
 
@@ -31,7 +31,6 @@ int EncodeToBase64(char* inStr, int len, char* outStr) {
        a1 = inStr[i];
        a2 = (i + 1 < len) ? inStr[i+1] : 0;
        a3 = (i + 2 < len) ? inStr[i+2] : 0;
-
 
        b1 = a1 >> 2;
        b2 = ((a1 & 0x3) << 4)|(a2 >> 4);
