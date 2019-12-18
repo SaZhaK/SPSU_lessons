@@ -9,7 +9,7 @@ using namespace std;
 
 const int defaultBufSize = 20;
 
-int myless(int argc, char* argv[]) {
+int main(int argc, char* argv[]) {
 
     struct termios oldt, newt;
 
