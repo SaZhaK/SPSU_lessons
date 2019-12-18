@@ -114,17 +114,17 @@ void sum () {
     print(elements, N);
 }
 
-int sequences() {
+int main(int argc, char* argv) {
 
-    //powers();
+    powers();
 
-    //arithmeticalProgresion();
+    arithmeticalProgresion();
 
-    //geometriaclProgresion();
+    geometriaclProgresion();
 
-    //fibonachi()
+    fibonachi()
 
-    //sum();
+    sum();
 
     return 0;
 }
