@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int mycopy(int argc, char* argv[]) {
+int main(int argc, char* argv[]) {
 
     if (argc < 3) {
         cout << "Requires 3 arguments at least" << endl;
