@@ -114,7 +114,7 @@ void sum () {
     print(elements, N);
 }
 
-int main(int argc, char* argv) {
+int main(int argc, char* argv[]) {
 
     powers();
 
