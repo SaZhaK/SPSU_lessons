@@ -86,7 +86,7 @@ void output (char str[]) {
     }
 }
 
-int placeValueSyste(int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
     int maxSize = 128;
 
     char bin[maxSize];
